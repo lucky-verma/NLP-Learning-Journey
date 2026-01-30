@@ -1,1 +1,19 @@
+# Core dependencies
 numpy
+pandas
+matplotlib
+seaborn
+plotly
+
+# Deep Learning
+torch
+transformers
+accelerate
+
+# Web Interface
+streamlit
+pillow
+
+# Utilities
+requests
+tqdm

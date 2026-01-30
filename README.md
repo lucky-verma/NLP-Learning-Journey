@@ -1,34 +1,49 @@
 # NLP Learning Journey
 
-This repository documents my journey of learning various topics in Natural Language Processing (NLP). Each folder represents a different NLP concept or technique, containing Jupyter notebooks, code examples, and resources related to that topic.
+A personal repository documenting explorations and hands-on projects in Natural Language Processing (NLP), featuring implementations of state-of-the-art models like BLIP-2 for vision-language tasks.
 
-## Structure
+## Features
 
-- Each major topic has its own folder.
-- Inside each folder:
-  - Jupyter notebooks with code examples and explanations.
-  - A README.md file summarizing key points and resources.
+- **BLIP-2 Vision-Language Demo**: Interactive Streamlit app for image captioning, visual Q&A, and chat-based prompting
+- **DPO (Direct Preference Optimization)**: Placeholder for preference learning experiments
+- **Practical NLP Examples**: Hands-on implementations of modern NLP techniques
 
-## Topics Covered
+## Quick Start
 
-| Topic Name        | Description                        | Folder Link                |
-|-------------------|------------------------------------|----------------------------|
-| Topic Name 1      | Brief description of the topic.    | [topic-name-1](./topic-name-1) |
-| Topic Name 2      | Brief description of the topic.    | [topic-name-2](./topic-name-2) |
-| Topic Name 3      | Brief description of the topic.    | [topic-name-3](./topic-name-3) |
-| Topic Name 4      | Brief description of the topic.    | [topic-name-4](./topic-name-4) |
+```bash
+git clone https://github.com/lucky-verma/NLP-Learning-Journey.git
+cd NLP-Learning-Journey
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+streamlit run BLIP-2/app.py
+```
 
-<!-- Add more topics as you learn them -->
+## Project Structure
 
-## Resources
+```
+NLP-Learning-Journey/
+├── BLIP-2/                 # Vision-language model demo
+│   └── app.py              # Streamlit app using Salesforce/blip2-opt-2.7b
+├── DPO/                    # Direct Preference Optimization (WIP)
+├── .github/                # CI workflows
+├── requirements.txt        # Project dependencies
+└── README.md
+```
 
-| Resource Name     | Type        | Link                      |
-|-------------------|-------------|---------------------------|
-| Book/Course Name 1| Book/Course | [link-to-resource](#)     |
-| Book/Course Name 2| Book/Course | [link-to-resource](#)     |
+## Tech Stack
 
+- **Language**: Python 3.8+
+- **Deep Learning**: PyTorch, Hugging Face Transformers
+- **Web Framework**: Streamlit
+- **Models**: BLIP-2 (Salesforce/blip2-opt-2.7b)
 
-## Notes
+## BLIP-2 Demo Features
 
-- This README will be updated regularly as I progress through different NLP topics.
-- Feel free to explore the folders for detailed notes and code examples on each topic.
+- **Image Captioning**: Generate captions for uploaded images
+- **Visual Question Answering**: Ask questions about images
+- **Chat-based Prompting**: Interactive dialogue about visual content
+
+## License
+
+MIT License
